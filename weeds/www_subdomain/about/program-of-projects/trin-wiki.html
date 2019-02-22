@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta name="google-site-verification" content="MdnA79C1YfZ6Yx2qYOXWi_TYFfUvEJOQAmHNaeEWIts"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="The Atlas of Living Australia provides tools to enable users of biodiversity information to find, access, combine and visualise data on Australian plants and animals"/>
+<title>TRIN Tools for Collaboration |  Atlas of Living Australia</title>
+<link rel="stylesheet" href="../../../wp-content/themes/ala/www_subdomain/style.css" type="text/css" media="screen"/>
+<link rel="icon" type="image/x-icon" href="../../../wp-content/themes/ala/images/www_subdomain/favicon.ico"/> 
+	<link rel="shortcut icon" type="image/x-icon" href="../../../wp-content/themes/ala/images/www_subdomain/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/sf.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/highlights.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/jquery.autocomplete.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/search.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/skin.css"/>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/iframe.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="Atlas of Living Australia » Feed" href="http://www.ala.org.au/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Atlas of Living Australia » Comments Feed" href="http://www.ala.org.au/comments/feed/"/>
+<link rel="stylesheet" id="commentvalidation-css" href="../../../wp-content/plugins/comment-validation/www_subdomain/comment-validation.css" type="text/css" media="all"/>
+<link rel="stylesheet" id="contact-form-7-css" href="../../../wp-content/plugins/contact-form-7/www_subdomain/styles.css" type="text/css" media="all"/>
+<link rel="stylesheet" id="jquery.lightbox.min.css-css" href="../../../wp-content/plugins/wp-jquery-lightbox/styles/www_subdomain/lightbox.min.css" type="text/css" media="all"/>
+<script type="text/javascript" src="../../../wp-includes/js/jquery/www_subdomain/jquery.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/comment-validation/www_subdomain/jquery.validate.pack.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/comment-validation/www_subdomain/comment-validation.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/menubar-templates/Superfish/www_subdomain/superfish.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ala.org.au/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ala.org.au/wp-includes/wlwmanifest.xml"/> 
+<link rel="prev" title="Sensitive Data Service" href="http://www.ala.org.au/about/program-of-projects/sds/"/>
+<link rel="next" title="Species Identification" href="http://www.ala.org.au/about/program-of-projects/species-identification/"/>
+<meta name="generator" content="WordPress 3.3.1"/>
+<link rel="canonical" href="http://www.ala.org.au/about/program-of-projects/trin-wiki/"/>
+<!-- WP Menubar 4.8: start CSS -->
+<!-- WP Menubar 4.8: end CSS -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/jquery.dimensions.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/jquery.mousewheel.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/hoverintent-min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/superfish/www_subdomain/superfish.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/jquery.autocomplete.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/uservoice.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/jquery.jcarousel.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../wp-content/themes/ala/scripts/fancybox/www_subdomain/jquery.fancybox-1.3.1.css" media="screen"/>
+	<script type="text/javascript" src="../../../wp-content/themes/ala/scripts/fancybox/www_subdomain/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$("a#asterisk").fancybox({
+				'hideOnContentClick' : false,
+				'titleShow' : false,
+				'autoDimensions' : false,
+				'width' : 600,
+				'height' : 350
+			});
+			$("a.pop-up").fancybox({
+				'hideOnContentClick' : false,
+				'titleShow' : false,
+				'autoDimensions' : false,
+				'width' : 550,
+				'height' : 100
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		// initialise plugins
+		jQuery(function(){
+			jQuery('ul.sf').superfish( {
+				delay:500,
+				autoArrows:false,
+				dropShadows:false
+			});
+		/**
+ * We use the initCallback callback
+ * to assign functionality to the controls
+ */
+function mycarousel_initCallback(carousel) {
+    jQuery('.jcarousel-control a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+        return false;
+    });
+    jQuery('#mycarousel-next').bind('click', function() {
+        carousel.next();
+        return false;
+    });
+    jQuery('#mycarousel-prev').bind('click', function() {
+        carousel.prev();
+        return false;
+    });
+};
+// Ride the carousel...
+jQuery(document).ready(function() {
+    jQuery("#mycarousel").jcarousel({
+        scroll: 6,
+        initCallback: mycarousel_initCallback
+        // This tells jCarousel NOT to autobuild prev/next buttons
+        //buttonNextHTML: null,
+        //buttonPrevHTML: null
+    });
+});
+            jQuery("form#search-form input#search").autocomplete('../../../search/bie_subdomain/auto.js', {
+                extraParams: {limit: 100},
+                dataType: 'jsonp',
+                parse: function(data) {
+                    var rows = new Array();
+                    data = data.autoCompleteList;
+                    for(var i=0; i<data.length; i++){
+                        rows[i] = { 
+                            data:data[i],
+                            value: data[i].matchedNames[0],
+                            result: data[i].matchedNames[0]
+                        };
+                    }
+                    return rows;
+                },
+                matchSubset: false,
+                formatItem: function(row, i, n) {
+                    return row.matchedNames[0];
+                },
+                cacheLength: 10,
+                minChars: 3,
+                scroll: false,
+                max: 10,
+                selectFirst: false
+            });
+			jQuery("form#search-inpage input#search").autocomplete('../../../search/bie_subdomain/auto.js', {
+                extraParams: {limit: 100},
+                dataType: 'jsonp',
+                parse: function(data) {
+                    var rows = new Array();
+                    data = data.autoCompleteList;
+                    for(var i=0; i<data.length; i++){
+                        rows[i] = { 
+                            data:data[i],
+                            value: data[i].matchedNames[0],
+                            result: data[i].matchedNames[0]
+                        };
+                    }
+                    return rows;
+                },
+                matchSubset: false,
+                formatItem: function(row, i, n) {
+                    return row.matchedNames[0];
+                },
+                cacheLength: 10,
+                minChars: 3,
+                scroll: false,
+                max: 10,
+                selectFirst: false
+            });
+		});
+	</script>
+<body id="page-2" class="page page-id-3300 page-child parent-pageid-3270 page-template-default two-column-left">
+<div id="wrapper">
+	<div id="banner">
+		<div id="logo">
+			<a href="http://www.ala.org.au/" title="Atlas of Living Australia home"><img src="../../../wp-content/themes/ala/images/www_subdomain/ala_logo.png" width="215" height="80" alt="Atlas of Living Australia logo"/></a>
+		</div><!--close logo-->
+		<div id="nav">
+		<!-- WP Menubar 4.8: start menu nav-site-loggedout, template Superfish, CSS  -->
+<ul class="sf"><li class="nav-home"><a href="http://www.ala.org.au/"><span>Home</span></a></li><li class="nav-explore"><a href="http://www.ala.org.au/explore/"><span>Explore</span></a><ul><li><a href="http://biocache.ala.org.au/explore/your-area"><span>Your Area</span></a></li><li><a href="http://bie.ala.org.au/regions/"><span>Regions</span></a></li><li><a href="http://spatial.ala.org.au/"><span>Species Maps</span></a></li><li><a href="http://biocache.ala.org.au/"><span>Occurrence search</span></a></li><li><a href="http://collections.ala.org.au/public/map"><span>Natural History Collections</span></a></li><li><a href="http://collections.ala.org.au/datasets"><span>Datasets</span></a></li><li><a href="http://www.ala.org.au/explore/themes/"><span>Themes & Case Studies</span></a></li></ul></li><li class="nav-tools"><a href="http://www.ala.org.au/tools-services/"><span>Tools</span></a><ul><li><a href="http://www.ala.org.au/tools-services/citizen-science/"><span>Citizen Science</span></a></li><li><a href="http://www.ala.org.au/tools-services/imaging/"><span>Imaging</span></a></li><li><a href="http://www.ala.org.au/tools-services/identification-tools/"><span>Identification Tools</span></a></li><li><a href="http://www.ala.org.au/tools-services/sds/"><span>Sensitive Data Service</span></a></li><li><a href="http://www.ala.org.au/tools-services/spatial-analysis/"><span>Spatial Analysis</span></a></li><li><a href="http://www.ala.org.au/tools-services/species-name-services/"><span>Taxon Web Services</span></a></li><li><a href="http://www.ala.org.au/tools-services/onlinedesktop-tools-review/"><span>Online & Desktop Tools Review </span></a></li><li><a href="http://www.ala.org.au/tools-services/ala-web-services-list/"><span>ALA - Web Services List</span></a></li></ul></li><li class="nav-share"><a href="http://www.ala.org.au/share/" title="Share - links, images, images, literature, your time"><span>Share</span></a><ul><li><a href="http://www.ala.org.au/share/share-links/"><span>Share links, ideas, information</span></a></li><li><a href="http://www.ala.org.au/share/share-data/"><span>Share Datasets</span></a></li><li><a href="http://www.ala.org.au/share/about-sharing/"><span>About Sharing</span></a></li></ul></li><li class="nav-support"><a href="http://www.ala.org.au/support/"><span>Support</span></a><ul><li><a href="http://www.ala.org.au/support/contact-us/"><span>Contact Us</span></a></li><li><a href="http://www.ala.org.au/support/get-started/"><span>Get Started</span></a></li><li><a href="http://www.ala.org.au/support/user-feedback/"><span>User Feedback</span></a></li><li><a href="http://www.ala.org.au/support/faq/"><span>Frequently Asked Questions</span></a></li></ul></li><li class="nav-contact"><a href="http://www.ala.org.au/support/contact-us/"><span>Contact Us</span></a></li><li class="nav-about"><a href="http://www.ala.org.au/about/"><span>About the Atlas</span></a><ul><li><a href="http://www.ala.org.au/about/progress/"><span>A Work In Progress</span></a></li><li><a href="http://www.ala.org.au/about/people/"><span>Working Together</span></a></li><li><a href="http://www.ala.org.au/about/contributors/"><span>Atlas Contributors</span></a></li><li><a href="http://www.ala.org.au/about/program-of-projects/"><span>Atlas Projects</span></a></li><li><a href="http://www.ala.org.au/about/international-collaborations/"><span>Associated Projects</span></a></li><li><a href="http://www.ala.org.au/about/communications-centre/"><span>Communications Centre</span></a></li><li><a href="http://www.ala.org.au/about/governance/"><span>Atlas Governance</span></a></li><li><a href="http://www.ala.org.au/about/terms-of-use/"><span>Terms of Use</span></a></li></ul></li><li class="nav-myprofile nav-right"><a href="https://auth.ala.org.au/cas/login?service=http://www.ala.org.au/wp-login.php?redirect_to=http://www.ala.org.au/my-profile/"><span>My Profile</span></a></li><li class="nav-login nav-right"><a href="https://auth.ala.org.au/cas/login?service=http://www.ala.org.au/wp-login.php?redirect_to=http://www.ala.org.au/"><span>Log in</span></a></li></ul>
+<!-- WP Menubar 4.8: end menu nav-site-loggedout, template Superfish, CSS  -->
+		</div><!--close nav-->
+		<div id="wrapper_search">
+			<form id="search-form" action="http://bie.ala.org.au/search" method="get" name="search-form">
+			<label for="search">Search</label>
+			<input type="text" class="filled" id="search" name="q" title="Search the Atlas" placeholder="Search the Atlas"/>
+			<span class="search-button-wrapper"><input type="submit" class="search-button" id="search-button" alt="Search" value="Search"/></span>
+			</form>
+		</div><!--close wrapper_search-->
+	</div><!--close banner-->
+	<div id="loginId" class="hide"></div>
+	<div style="display:none; text-align: left;">
+					<div id="search_record" style="text-align: left;">
+						<h3>Enter the species' scientific or common name</h3>
+						<div id="inpage_search">
+							<form id="search-inpage" action="http://bie.ala.org.au/search" method="get" name="search-form">
+							<label for="search">Search</label>
+							<input type="text" class="filled" id="search" name="q" placeholder="e.g. Ornithorhynchus anatinus"/>
+							<span class="search-button-wrapper"><input type="submit" class="search-button" alt="Search" value="Search"/></span>
+							</form>
+						</div><!--close wrapper_search-->
+					</div>
+				</div><!--close lightbox-->
+	<div id="content">
+		<div id="header">
+			<div id="breadcrumb"><a href="http://www.ala.org.au/">Home</a> <a href="http://www.ala.org.au/about/">About the Atlas</a> <a href="http://www.ala.org.au/about/program-of-projects/">Atlas Projects</a> TRIN Tools for Collaboration</div>			<h1>TRIN Tools for Collaboration</h1>
+		</div><!--close header-->
+			<div id="column-one">
+						<ul class="nav-vertical">
+				<li><a href="http://www.ala.org.au/about/">About the Atlas</a>
+				<ul>
+								<li class="page_item page-item-11571"><a href="http://www.ala.org.au/about/progress/">A Work In Progress</a>
+<ul class="children">
+	<li class="page_item page-item-13930"><a href="http://www.ala.org.au/about/progress/cant-find-species/">Species Not Found&#63;</a></li>
+	<li class="page_item page-item-13946"><a href="http://www.ala.org.au/about/progress/no-species-information/">No Species Information?</a></li>
+	<li class="page_item page-item-13949"><a href="http://www.ala.org.au/about/progress/same-species-different-names/">Duplicate Species&#63;</a></li>
+	<li class="page_item page-item-13974"><a href="http://www.ala.org.au/about/progress/wrong-classification/">Wrong Classification?</a></li>
+	<li class="page_item page-item-13980"><a href="http://www.ala.org.au/about/progress/map-ranges/">Errors In Maps&#63;</a></li>
+	<li class="page_item page-item-16019"><a href="http://www.ala.org.au/about/progress/issueslog/">Known Issues</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3478"><a href="http://www.ala.org.au/about/atlas-partners/">Atlas Partners</a>
+<ul class="children">
+	<li class="page_item page-item-3582"><a href="http://www.ala.org.au/about/atlas-partners/csiro/">CSIRO</a></li>
+	<li class="page_item page-item-3603"><a href="http://www.ala.org.au/about/atlas-partners/australian-museum/">Australian Museum</a></li>
+	<li class="page_item page-item-3605"><a href="http://www.ala.org.au/about/atlas-partners/museum-and-art-gallery-of-northern-territory/">Museum and Art Gallery of the Northern Territory</a></li>
+	<li class="page_item page-item-3609"><a href="http://www.ala.org.au/about/atlas-partners/museum-victoria/">Museum Victoria</a></li>
+	<li class="page_item page-item-3612"><a href="http://www.ala.org.au/about/atlas-partners/queensland-museum/">Queensland Museum</a></li>
+	<li class="page_item page-item-3615"><a href="http://www.ala.org.au/about/atlas-partners/south-australian-museum/">South Australian Museum</a></li>
+	<li class="page_item page-item-3618"><a href="http://www.ala.org.au/about/atlas-partners/tasmanian-museum-and-art-gallery/">Tasmanian Museum and Art Gallery</a></li>
+	<li class="page_item page-item-3620"><a href="http://www.ala.org.au/about/atlas-partners/western-australian-museum/">Western Australian Museum</a></li>
+	<li class="page_item page-item-3640"><a href="http://www.ala.org.au/about/atlas-partners/council-of-australasian-museum-directors/">Council of Australasian Museum Directors</a></li>
+	<li class="page_item page-item-3645"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australasian-herbaria/">Council of Heads of Australasian Herbaria</a></li>
+	<li class="page_item page-item-3656"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australian-collections-of-microorganisms/">Council of Heads of Australian Collections of Microorganisms</a></li>
+	<li class="page_item page-item-3659"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australian-entomological-collections/">Council of Heads of Australian Entomological Collections</a></li>
+	<li class="page_item page-item-3664"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australian-faunal-collections/">Council of Heads of Australian Faunal Collections</a></li>
+	<li class="page_item page-item-3666"><a href="http://www.ala.org.au/about/atlas-partners/southern-cross-university/">Southern Cross University</a></li>
+	<li class="page_item page-item-3669"><a href="http://www.ala.org.au/about/atlas-partners/the-university-of-adelaide/">The University of Adelaide</a></li>
+	<li class="page_item page-item-3671"><a href="http://www.ala.org.au/about/atlas-partners/department-of-agriculture-fisheries-and-forestry/">Department of Agriculture, Fisheries and Forestry</a></li>
+	<li class="page_item page-item-3675"><a href="http://www.ala.org.au/about/atlas-partners/dsewpac/">Department of Sustainability, Environment, Water, Population and Communities</a></li>
+	<li class="page_item page-item-3702"><a href="http://www.ala.org.au/about/atlas-partners/national-collaborative-research-infrastructure-strategy/">National Collaborative Research Infrastructure Strategy</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3396"><a href="http://www.ala.org.au/about/people/">Working Together</a></li>
+<li class="page_item page-item-3914"><a href="http://www.ala.org.au/about/contributors/">Atlas Contributors</a></li>
+<li class="page_item page-item-3270 current_page_ancestor current_page_parent"><a href="http://www.ala.org.au/about/program-of-projects/">Atlas Projects</a>
+<ul class="children">
+	<li class="page_item page-item-3279"><a href="http://www.ala.org.au/about/program-of-projects/aboln/">Australian Barcode of Life Network (ABOLN) / Molecular Data</a></li>
+	<li class="page_item page-item-4323"><a href="http://www.ala.org.au/about/program-of-projects/annotations/">Annotations</a>
+	<ul class="children">
+		<li class="page_item page-item-4470"><a href="http://www.ala.org.au/about/program-of-projects/annotations/preview-danno-dannotate/">Annotations Preview</a></li>
+		<li class="page_item page-item-15809"><a href="http://www.ala.org.au/about/program-of-projects/annotations/collaborative-annotations/">Collaborative Annotations</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3272"><a href="http://www.ala.org.au/about/program-of-projects/bhl/">BHL / Digital Literature</a></li>
+	<li class="page_item page-item-23121"><a href="http://www.ala.org.au/about/program-of-projects/biolink/">BioLink</a></li>
+	<li class="page_item page-item-12246"><a href="http://www.ala.org.au/about/program-of-projects/biolomics/">BioloMICS</a>
+	<ul class="children">
+		<li class="page_item page-item-23983"><a href="http://www.ala.org.au/about/program-of-projects/biolomics/micro-organism-data-extended-field-list-and-preferred-layout/">Micro-organism Data - Recommended and Extended Field Lists</a></li>
+		<li class="page_item page-item-24067"><a href="http://www.ala.org.au/about/program-of-projects/biolomics/steps-to-share-micro-organism-data/">Steps to Share Micro-organism Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-23951"><a href="http://www.ala.org.au/about/program-of-projects/bold-molecular-data/">BOLD / Molecular Data</a></li>
+	<li class="page_item page-item-3290"><a href="http://www.ala.org.au/about/program-of-projects/citizen-science/">Citizen Science</a>
+	<ul class="children">
+		<li class="page_item page-item-10765"><a href="http://www.ala.org.au/about/program-of-projects/citizen-science/currently-working-on/">Currently Working On</a></li>
+		<li class="page_item page-item-10763"><a href="http://www.ala.org.au/about/program-of-projects/citizen-science/work-to-date/">Work to Date</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3307"><a href="http://www.ala.org.au/about/program-of-projects/collections-data-management/">Collection Data Management</a></li>
+	<li class="page_item page-item-3260"><a href="http://www.ala.org.au/about/program-of-projects/data-management/">Data Management</a></li>
+	<li class="page_item page-item-3324"><a href="http://www.ala.org.au/about/program-of-projects/spatial-mapping/">Mapping: the Spatial Portal</a>
+	<ul class="children">
+		<li class="page_item page-item-4571"><a href="http://www.ala.org.au/about/program-of-projects/spatial-mapping/geospatial-data-harvesting/">Geospatial Data Harvesting</a></li>
+		<li class="page_item page-item-4628"><a href="http://www.ala.org.au/about/program-of-projects/spatial-mapping/gis-services/">GIS Services</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3277"><a href="http://www.ala.org.au/about/program-of-projects/morphbank/">Morphbank / Imaging</a></li>
+	<li class="page_item page-item-3281"><a href="http://www.ala.org.au/about/program-of-projects/names-services/">National Species Lists</a>
+	<ul class="children">
+		<li class="page_item page-item-8875"><a href="http://www.ala.org.au/about/program-of-projects/names-services/aboutportfolio-of-projectsnames-servicesspecies-names/">Species Names</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3298"><a href="http://www.ala.org.au/about/program-of-projects/sds/">Sensitive Data Service</a>
+	<ul class="children">
+		<li class="page_item page-item-12380"><a href="http://www.ala.org.au/about/program-of-projects/sds/threatened-species-codes/">Threatened Species Codes</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3302"><a href="http://www.ala.org.au/about/program-of-projects/species-identification/">Species Identification</a>
+	<ul class="children">
+		<li class="page_item page-item-6415"><a href="http://www.ala.org.au/about/program-of-projects/species-identification/supporting-delta-users/">Supporting DELTA users</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-11976"><a href="http://www.ala.org.au/about/program-of-projects/specify/">Specify 6</a></li>
+	<li class="page_item page-item-3300 current_page_item"><a href="http://www.ala.org.au/about/program-of-projects/trin-wiki/">TRIN Tools for Collaboration</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3506"><a href="http://www.ala.org.au/about/international-collaborations/">Associated Projects</a>
+<ul class="children">
+	<li class="page_item page-item-16147"><a href="http://www.ala.org.au/about/international-collaborations/gbif/">GBIF</a></li>
+</ul>
+</li>
+<li class="page_item page-item-24"><a href="http://www.ala.org.au/about/communications-centre/">Communications Centre</a>
+<ul class="children">
+	<li class="page_item page-item-17727"><a href="http://www.ala.org.au/about/communications-centre/atlas-blog/">Atlas Updates</a></li>
+	<li class="page_item page-item-22952"><a href="http://www.ala.org.au/about/communications-centre/ala-media-coverage-2011/">ALA Media coverage 2011</a></li>
+	<li class="page_item page-item-22946"><a href="http://www.ala.org.au/about/communications-centre/ala-media-coverage-2010/">ALA Media Coverage 2010</a></li>
+	<li class="page_item page-item-22943"><a href="http://www.ala.org.au/about/communications-centre/ala-media-coverage-2008/">ALA Media Coverage 2008</a></li>
+	<li class="page_item page-item-11877"><a href="http://www.ala.org.au/about/communications-centre/publications/">Publications</a>
+	<ul class="children">
+		<li class="page_item page-item-6295"><a href="http://www.ala.org.au/about/communications-centre/publications/user-needs-analysis-report/">User needs analysis report</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-11880"><a href="http://www.ala.org.au/about/communications-centre/presentations/">Presentations</a>
+	<ul class="children">
+		<li class="page_item page-item-6982"><a href="http://www.ala.org.au/about/communications-centre/presentations/tdwg-2008-presentations/">TDWG 2008 Presentations</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-3468"><a href="http://www.ala.org.au/about/governance/">Atlas Governance</a>
+<ul class="children">
+	<li class="page_item page-item-4947"><a href="http://www.ala.org.au/about/governance/governance-documents/">Governance Documents</a></li>
+</ul>
+</li>
+<li class="page_item page-item-92"><a href="http://www.ala.org.au/about/terms-of-use/">Terms of Use</a>
+<ul class="children">
+	<li class="page_item page-item-93"><a href="http://www.ala.org.au/about/terms-of-use/citing-the-atlas/">Citing the Atlas</a></li>
+	<li class="page_item page-item-1858"><a href="http://www.ala.org.au/about/terms-of-use/photo-credits/">Photo Credits</a></li>
+	<li class="page_item page-item-1874"><a href="http://www.ala.org.au/about/terms-of-use/privacy-policy/">Privacy Policy</a></li>
+</ul>
+</li>
+				</ul>
+				</li>
+			</ul>
+		</div><!--close column-one-->
+		<div id="column-two">
+			<div class="section">		
+						<h2>TRIN Overview</h2>
+<p>The CERF <a class="external" href="http://www.taxonomy.org.au/" target="_blank">Taxonomy Research & Information Network (TRIN)</a> is a group of Australian taxonomists working together to address gaps in our knowledge of Australia’s biodiversity. Taxonomy is the discovery, description, identification & classification of organisms. Taxonomy provides the basis for identifying and monitoring Australia’s biodiversity which in turn provides the knowledge needed for effective environmental management.</p>
+<p>TRIN aims to enhance and accelerate taxonomic research and communication on Australia’s biodiversity, with broad goals to:</p>
+<ul>
+<li>reinvigorate taxonomy in Australia</li>
+<li>evaluate and road test new methodologies for research and delivery of taxonomic information for a wide range of end users</li>
+<li>create and maintain a modern collaborative national electronic framework for taxonomic knowledge exchange.</li>
+</ul>
+<div id="attachment_10483" class="wp-caption alignright" style="width: 201px"><img class="size-medium wp-image-10483 " title="A TRIN Project, What Bug Is That?" src="../../../wp-content/uploads/2010/07/www_subdomain/what-bug-is-that-cropped-191x308.jpg" alt="" width="191" height="308"/><p class="wp-caption-text">A TRIN Project, What Bug Is That?</p></div>
+<h2>What is the TRIN Wiki?</h2>
+<p>The TRIN Wiki is a collaborative platform for members of TRIN and the broader taxonomic community. Anyone is welcome to participate; use TRIN’s on-line collaboration and communcation tools (website, wiki, email lists, etc.), or initiate new collaborative taxonomy research projects.</p>
+<p>The TRIN Wiki is organised around specific projects which vary in their maturity and target audience. Some contain information put together for public consumption. Others are moderated or closed spaces, in which taxonomic projects collaborate on their own business prior to it being published.</p>
+<p>Projects include <a class="external" href="http://www.taxonomy.org.au/projects/ants.html" target="_blank">Australian Ants</a>, <a class="external" href="http://www.taxonomy.org.au/projects/inverts.html" target="_blank">Mayflies and Aquatic Invertebrates</a>, <a class="external" href="http://www.taxonomy.org.au/projects/insects.html" target="_blank">Insect Families on the Web</a>, <a class="external" href="http://www.taxonomy.org.au/projects/verts.html" target="_blank">Small Terrestrial Vertebrates</a>, <a class="external" href="http://www.taxonomy.org.au/projects/weeds.html" target="_blank">Environmental Weeds</a>, <a class="external" href="http://www.taxonomy.org.au/projects/informatics.html" target="_blank">Biodiversity Informatics</a>, <a class="external" href="http://www.taxonomy.org.au/projects/knowledge.html" target="_blank">Communication & Knowledge Exchange</a>, and <a class="external" href="http://www.taxonomy.org.au/projects/mangroves.html" target="_blank">Australian Mangrove & Saltmarsh Species</a></p>
+<h2>New Contributors Welcome</h2>
+<p><span style="font-size: small;"><span style="color: #000000;">TRIN</span><span style="color: #ff0000;"><span style="color: #000000;"> is seeking to engage with more researchers and natural historians to</span></span></span><span style="font-size: small;"><span style="color: #ff0000;"><span style="color: #000000;"> refine our toolkits and wiki. In return, TRIN will provide users with the tools to compile content tailored to their needs.</span></span></span></p>
+<h2>Tools for Creating New Knowledge</h2>
+<h3>The Problem</h3>
+<p>The building of biodiversity knowledge is necessarily slow. Expertise is limited and there are a large number of taxa which are yet to be described in more detail than those given in their original (formal taxon) description. Additional knowledge accumulates very slowly and may not be revised for decades. Biodiversity knowledge which is both truly ‘born digital’ and online is rare. And to be structured in a way that enables it to be mobilised and re-mixed in new contexts is rarer still.</p>
+<h3>The Taxon Profile Toolkit</h3>
+<p>This project provides collaborative online tools with simple interfaces for authors who wish to create, collate, or compile well-structured biodiversity knowledge.  The intention is to be flexible and non-prescriptive about how content is structured and at the same time introduce strong (semantic) rigour and transportability so that information can (as required and as permitted) be moved, and effectively reused in novel contexts with the meaning preserved.  It will be simple to port large quantities of knowledge into this toolkit from other sources and to get it out afterwards.  It will be simple to make links (as needed) to data provided from online biodiversity services and data sources.</p>
+<p>This project aims to develop tools that are needed and will be used. Prototypes are ready and deployed. TRIN Wiki is seeking to engage with more researchers and natural historians so as to further refine the toolkit and wiki. TRIN Wiki will provide users with the tools to compile content in return for their assistance in making the tools better fit the needs of biodiversity research and publishing.</p>
+<h2>What are Taxon Profiles?</h2>
+<p>&#8220;<em>A term for - the many and varied - structured templates for information associated with a group of organisms, also known in a narrower context as Species Fact Sheets and Species Pages.</em>&#8221;</p>
+<div id="attachment_10693" class="wp-caption alignright" style="width: 359px"><img class="size-full wp-image-10693" title="Species profile of Geopelia humeralis " src="../../../wp-content/uploads/2010/07/www_subdomain/geopelia.gif" alt="" width="349" height="424"/><p class="wp-caption-text">Species profile of Geopelia humeralisPhoto courtesy of Garry Jolley-Rogers, TRIN Wiki</p></div>
+<p>Biodiversity information is typically highly structured. Information is separately presented for each Taxon of interest (e.g. species, genus, or family) in a consistent, template like form. Sections may be identified by labels, or typographically (in written works), or via layout. Almost any kind of information relevant to the organisms under consideration may be included in a profile. In some form, all profiles include a name; most also include some nomenclature and identifying attributes.</p>
+<p>Labels, terminology and meaning are generally consistent for a given group or work (be that monograph or website). However, the organisation and labelling of other information can be idiosyncratic using conventions and language particular to a given biological discipline. This presents challenges - particularly if work is to be used in applications outside its original context; and thus a challenge for projects which present biological information from many sources into new forms (e.g. aggregators such as the Atlas of Living Australia, Encyclopaedia of Life)</p>
+<h3>A Challenge</h3>
+<p>There is no agreed form of a Taxon (or more narrowly, species) Profile, Fact Sheet or Page. There is unlikely to ever be one.</p>
+<p>The terminology and organisation of biodiversity knowledge differs with each discipline. This is not just contingency. It is also well founded scientific necessity. The means of identification differs with different kinds of organisms; and different facts are of interest. Formats, content, and labels can vary considerably in publications which describe the same taxonomic groups. Just as authors interests vary so do the facts they have on hand. Frequently, different applications of terminology are also apparent; a consequence of history or differing scientific views and discipline specific vocabularies.</p>
+<h3>TRIN Wiki Solution</h3>
+<div id="attachment_10481" class="wp-caption alignright" style="width: 460px"><img class="size-large wp-image-10481 " title="Wallace Core mappings for TRIN Wiki." src="../../../wp-content/uploads/2010/07/www_subdomain/Lantana-wc-mappings3-1000x539.jpg" alt="Wallace Core mappings for TRIN Wiki. Photo courtesy of Garry Jolley-Rogers." width="450" height="242"/><p class="wp-caption-text">Wallace Core mappings for TRIN Wiki.Photo courtesy of Garry Jolley-Rogers.</p></div>
+<p>TRIN Wiki is building a meta-taxon profile (Wallace Core); a single expansive framework capable of describing many arbitrary taxon profiles, and the means to use it to describe individual/given taxon profiles.</p>
+<p>This is essential for the use of information in novel contexts; and as a means to standardise general biodiversity knowledge (as opposed to just for nomenclatural or identification information) without the necessity of changing content, labels or organisation.</p>
+<p>Wallace Core will be based on a wide-ranging sample of past and current books, journals and websites; and as such will be a summary of best and current practice of how to organise biodiversity facts; in forms appropriate to discipline, taxon, and purpose.</p>
+<h2>Current Achievements</h2>
+<p>Prototypes are ready and deployed.</p>
+<p>Development of ‘The Taxon Profile Toolkit’ continues in the <a class="external" href="http://wiki.trin.org.au/TaxonProfile/" target="_blank">TRIN Wiki</a> including online rich text editors that produce versioned, structured content.</p>
+<p>There are flexible user defined templates for biodiversity knowledge including citation management, pictures and media.  Work continues to make the creation and application of templates more user friendly.</p>
+<p>The framework and underlying super-structure of ‘Wallace Core’ is complete. A survey is underway of taxon profiles (e.g. species pages and fact sheets) chosen to be representative of content across the biological disciplines.  Wallace Core will be built from this survey. Its constituents defined so as to be broad yet rigorously defined and foremost of all usable.</p>
+<div id="attachment_10492" class="wp-caption alignright" style="width: 298px"><img class="size-medium wp-image-10492 " title="Taxonomic projects collaborate via the TRIN Wiki" src="../../../wp-content/uploads/2010/07/www_subdomain/TRIN-Wiki-field-day-cropped-300px1-288x308.jpg" alt="Taxonomic projects collaborate via the TRIN Wiki" width="288" height="308"/><p class="wp-caption-text">Taxonomic projects collaborate via the TRIN Wiki</p></div>
+<h2>Deliverables & Timeline</h2>
+<p>The Taxon Profile Toolkit will provide novel techniques for the:</p>
+<ul>
+<li>compilation</li>
+<li>collation</li>
+<li>collaboration</li>
+<li>structuring</li>
+<li>publishing
+<ul>
+<li>online</li>
+<li>in print</li>
+<li>to a database</li>
+</ul>
+</li>
+<li>mark up</li>
+<li>exchange</li>
+</ul>
+<p>of biodiversity knowledge  - from current research and existing sources.</p>
+<p>It will include tools and templates for the compilation of taxonomic knowledge with online editors which is versioned, collaborative, structured in content. In a form that is:</p>
+<ul>
+<li>well structured</li>
+<li>flexible</li>
+<li>tolerant of  idiosyncrasy</li>
+<li>portable</li>
+<li>re-usable (as appropriate)</li>
+<li>linked to other Biodiversity Resources (nomenclators, keys, images).</li>
+</ul>
+<p>There will be a means so that:</p>
+<ul>
+<li>access can be appropriately controlled</li>
+<li>content can be easily ported from other sources</li>
+<li>content can be exported in a form that can be digested elsewhere</li>
+<li>to translate and link information about taxa across disciplines</li>
+<li>to encode similar/common meaning to elements</li>
+</ul>
+<p>And:</p>
+<ul>
+<li>an exchange standard for biodiversity knowledge.</li>
+</ul>
+<p>The TRIN Wiki project is progressively refining The Taxon Profile Toolkit associated with TRIN WIKI and Wallace Core.</p>
+<h2><strong>Project Lead</strong></h2>
+<p><strong> </strong><a href="mailto:Garry.Jolley-Rogers@csiro.au">Garry.Jolley-Rogers@csiro.au</a><br/>
+Biodiversity Informatics, Taxonomy Research & Information Network<br/>
+Centre for Plant Biodiversity Research, CSIRO Plant Industry,<br/>
+Phone: 02 62465501</p>
+<h3><strong>Executive Brains Trust</strong></h3>
+<p>Jim Croft<br/>
+Australian National Botanic Gardens</p>
+<p>Margaret Cawsey<br/>
+Australian National Wildlife Collection</p>
+<h3><strong>Developers and Analysts </strong></h3>
+<p>Paul Harvey, Paul Alexander<strong><br/>
+</strong>Biodiversity Informatics, Taxonomy Research & Information Network</p>
+<h2>For More Information</h2>
+<p>Please see <a class="external" href="http://wiki.trin.org.au/Main" target="_blank">TRIN Wiki</a><br/>
+Email: <a href="mailto:trin.wiki@csiro.au" target="_blank">trin.wiki@csiro.au</a> or <a href="mailto:trin@csiro.au" target="_blank">trin@csiro.au</a></p>
+					</div><!--close section-->
+		</div><!--close column-two-->
+	</div><!--close content-->
+	<div id="footer">
+				<div id="footer-nav">
+		<ul id="menu-footer-site" class=""><li id="menu-item-1046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1046"><a href="http://www.ala.org.au/">Home</a></li>
+<li id="menu-item-8090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8090"><a href="http://www.ala.org.au/explore/">Explore</a></li>
+<li id="menu-item-1051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1051"><a href="http://www.ala.org.au/tools-services/">Tools</a></li>
+<li id="menu-item-8091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8091"><a href="http://www.ala.org.au/share/">Share</a></li>
+<li id="menu-item-1050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1050"><a href="http://www.ala.org.au/support/">Support</a></li>
+<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a href="http://www.ala.org.au/support/contact-us/">Contact Us</a></li>
+<li id="menu-item-1047" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1047"><a href="http://www.ala.org.au/about/">About the Atlas</a></li>
+<li id="menu-item-1052" class="last menu-item menu-item-type-custom menu-item-object-custom menu-item-1052"><a href="http://www.ala.org.au/wp-login.php">Log in</a></li>
+</ul>		<ul id="menu-footer-legal" class=""><li id="menu-item-1045" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1045"><a href="http://www.ala.org.au/about/terms-of-use/">Terms of Use</a></li>
+<li id="menu-item-1042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1042"><a href="http://www.ala.org.au/about/terms-of-use/citing-the-atlas/">Citing the Atlas</a></li>
+<li id="menu-item-12256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12256"><a href="http://www.ala.org.au/about/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-3090" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-3090"><a href="http://www.ala.org.au/site-map/">Site Map</a></li>
+</ul>		</div>
+		<div class="copyright"><p><a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons" class="left no-pipe"><img src="../../../wp-content/themes/ala/images/www_subdomain/creativecommons.png" width="88" height="31" alt=""/></a>This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons">Creative Commons Attribution 3.0 Australia License</a></p><p>Provider content may be covered by other <span class="asterisk-container"><a href="http://www.ala.org.au/about/terms-of-use/" title="Terms of Use">Terms of Use</a>.</span></p></div>
+	</div><!--close footer-->
+	</div><!--close wrapper-->
+<script type="text/javascript" src="../../../wp-content/plugins/contact-form-7/www_subdomain/jquery.form.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/contact-form-7/www_subdomain/scripts.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"1","resizeSpeed":"250","displayDownloadLink":"0","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"","linkTarget":"_self","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../../wp-content/plugins/wp-jquery-lightbox/www_subdomain/jquery.lightbox.min.js"></script>
+</body>
+</html>

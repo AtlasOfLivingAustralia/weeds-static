@@ -1,0 +1,103 @@
+/** ALA Print version CCS file */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	font: 12pt/18pt "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+	/* line-height: 1.7em; */
+}
+
+h1, h2 {
+	font-size: 16pt;
+}
+
+h3, h4, h5, h6 {
+	font-size: 14pt;
+	line-height: 1.2em;
+}
+
+h1#blog-title {
+    font-size: 18pt;
+    color: black;
+    height: 41px;
+    background: #FFF url(img/ALA-logo-40px.gif) no-repeat  left top;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+
+h1#blog-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1#blog-title #blog-url {
+    font-size: 14pt;
+    color: #444444;
+}
+
+#header {
+	position: inherit;
+	background: white;
+    height: auto;
+}
+
+#blog-description, div#menu, #top-nav, div#searchbar {
+    display: none;
+}
+
+#crumbtrail, #crumbtrail a {
+	font-size: 10pt;
+	text-decoration: none;
+	color: #444444;
+}
+
+#content-left {
+	float: left;
+	width: 65%;
+}
+
+#content-right {
+	float: right;
+	width: 33%;
+}
+
+#footer {
+    background: #fff;
+    border-top: 1px solid #CECECE;
+    clear: both;
+}
+
+div.alignleft {
+   	float: left;
+   	margin: 10px;
+}
+
+div.alignright {
+   	float: right;
+   	margin: 10px;
+   	width: 33%;
+}
+
+#legal {
+	float: left;
+	width: 48%;
+}
+
+#webdemar {
+	float: right;
+	width: 48%;
+	text-align: right;
+}
+
+div#lastModified {
+    clear: both;
+    float: right;
+    font-size: 10pt;
+    color: #444444;
+}
+
+.img-label {
+    font-size:10pt;
+    line-height:1.2em;
+}

@@ -1,0 +1,152 @@
+.jcarousel-skin .jcarousel-container {
+
+}
+
+.jcarousel-skin .jcarousel-container-horizontal {
+    width: 633px;
+    padding: 5px 0;
+	margin:0;
+}
+
+.full-width .jcarousel-skin .jcarousel-container-horizontal {
+	width:868px;
+	padding:10px 35px;
+}
+
+.jcarousel-skin .jcarousel-clip-horizontal {
+    width:  633px;
+    height: 130px;
+}
+
+.full-width .jcarousel-skin .jcarousel-clip-horizontal {
+	width:868px;
+}
+
+.jcarousel-skin .jcarousel-item {
+    width: 93px;
+   /* height: 85px;*/
+}
+
+.jcarousel-skin .jcarousel-item  a img {
+	display:block;
+	text-align:center;
+}
+
+.jcarousel-skin .jcarousel-item  a  {
+	text-decoration:none;
+	text-align:center;
+}
+
+.jcarousel-skin .jcarousel-item-horizontal {
+    margin-right: 15px;
+}
+
+.jcarousel-skin .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin .jcarousel-next-horizontal {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background: transparent url(img/button_carousel.png) no-repeat -18px 0;
+	border:1px #0c5a68 solid;
+	-moz-border-radius: 3px; /* FF1+ */
+	-webkit-border-radius: 3px; /* Saf3+, Chrome */
+	-o-border-radius: 3px;
+	-icab-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px; /* Opera 7.7, IE 9 */
+}
+
+.jcarousel-skin .jcarousel-next-horizontal:hover {
+    background-position: -18px -18px;
+	border:1px #dd3102 solid;
+}
+
+.jcarousel-skin .jcarousel-next-horizontal:active {
+    background-position: -18px -36px;
+	border:1px #dd3102 solid;
+}
+
+.jcarousel-skin .jcarousel-next-disabled-horizontal,
+.jcarousel-skin .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -18px -54px;
+	border:1px #ccc solid;
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal {
+    position: absolute;
+    top: -25px;
+    /*right: 25px;*/
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background: transparent url(img/button_carousel.png) no-repeat 0 0;
+	border:1px #0c5a68 solid;
+	-moz-border-radius: 3px; /* FF1+ */
+	-webkit-border-radius: 3px; /* Saf3+, Chrome */
+	-o-border-radius: 3px;
+	-icab-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px; /* Opera 7.7, IE 9 */
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal:hover {
+    background-position: 0 -18px;
+	border:1px #dd3102 solid;
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal:active {
+    background-position: 0 -36px;
+	border:1px #dd3102 solid;
+}
+
+.jcarousel-skin .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: 0 -54px;
+	border:1px #ccc solid;
+}
+div.jcarousel-control {
+	position:absolute;
+	top:4px;
+	right:36px;
+}
+.jcarousel-control ul, .jcarousel-control ul li, .jcarousel-control ul li a{
+	margin:0;
+	padding:0;
+	width:auto;
+}
+.jcarousel-control ul li {
+	width:.3em;
+	margin:5px;
+	text-indent:-10000px;
+}
+.jcarousel-control ul li a {
+	float:left;
+	padding:.3em;
+	background-color:#f0f0f0;
+	height:0;
+	overflow:hidden;
+	border:1px solid #ccc;
+	-moz-border-radius: .5em; /* FF1+ */
+	-webkit-border-radius: .5em; /* Saf3+, Chrome */
+	-o-border-radius: .5em;
+	-icab-border-radius: .5em;
+	-khtml-border-radius: .5em;
+	border-radius: .5em; /* Opera 7.7, IE 9 */
+}
+.jcarousel-control ul li a:hover {
+	border-color:#dd3102;
+}

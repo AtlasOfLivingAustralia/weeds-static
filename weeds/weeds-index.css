@@ -1,0 +1,42 @@
+body {
+	color: #4a300c;
+	background-color: #aebc82;
+}
+
+.searchtext { font-size : 10px; color: #aebc82;! important }
+
+a:link,a:active { color : #322108; }
+a:visited { color : #695535; }
+a:hover { text-decoration: underline; color : #ff0000; }
+hr { height: 0px; border: solid #d5d5d5 0px; border-top-width: 1px;}
+
+.heavy { font-family: Arial Black, Arial, Helvetica, Verdana, sans-serif }
+
+.pagesub { font-size : 18px; font-family: Arial Black, Arial, Helvetica, Verdana, sans-serif; }
+
+.sitemapmenu { font-size : 10px; }
+a.sitemapmenu,a.sitemapmenu:active { color: #322108; text-decoration: underline; }
+a.sitemapmenu:visited { color: #695535; text-decoration: underline; }
+a.sitemapmenu:hover	{ color: #ff0000; text-decoration: underline; }
+
+.identlink { font-size : 20px; }
+a.identlink,a.identlink:active,a.identlink:visited { color: #322108; text-decoration: none; }
+a.identlink:hover	{ color: #ff0000; text-decoration: underline; }
+
+input.button {
+	width : 120px;
+	background-color : #A3B179;
+	color : #4a300c;
+	font-size: 13 px;
+	font-family: arial;
+	font-weight : bold;
+}
+
+input.button2 {
+	width : 200px;
+	background-color : #A3B179;
+	color : #4a300c;
+	font-size: 13 px;
+	font-family: arial;
+	font-weight : bold;
+}

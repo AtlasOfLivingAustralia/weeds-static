@@ -1,0 +1,59 @@
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	overflow: hidden;
+	z-index: 99999;
+	border:1px solid #ccc;
+	background:#fff;
+	-moz-border-radius:0 0 7px 7px; /* FF1+ */
+	-webkit-border-radius:0 0 7px 7px; /* Saf3+, Chrome */
+	-o-border-radius:0 0 7px 7px;
+	-icab-border-radius:0 0 7px 7px;
+	-khtml-border-radius:0 0 7px 7px;
+	border-radius:0 0 7px 7px; /* Opera 7.7, IE 9 */
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 7px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;font: menu;*/
+	
+	font-size: 14px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+    text-align:left;
+	color:#555;
+}
+
+.ac_loading {
+	background: white url('img/indicator.gif') right center no-repeat;
+}
+
+li.ac_odd {
+	background-color:transparent;
+}
+
+li.ac_over {
+	background-color: #dd3102;
+	color: #fff;
+}
+.ac_results li strong { color:#01716e;}
+.ac_results li.ac_over strong { color:#fff;}

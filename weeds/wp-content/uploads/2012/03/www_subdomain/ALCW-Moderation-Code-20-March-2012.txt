@@ -1,0 +1,173 @@
+************************************************************************************
+*******************  MODERATION CODE - ADDED BY ADMIN/DEVELOPER ******************* 
+************************************************************************************
+
+20 March 2012 COMPLETED
+
+NOTE - this code uses show/hide instructions controls as moderation instructions fit into the same requirements
+		
+		
+***********MODERATION TEXT CODE 1:
+			PARSING THE URL TO DETERMINE WHAT STAGE THE SIGHTING RECORD IS AT THEN SETTING APPROPRIATE DEISPLAY ATTRIBUTES
+			css display/hide settings are set to default values on load for all page content 
+			the pageMode variable is then used to determine whether to show or hide instructions & other fields on page load by overriding the default settings.
+			
+			.instructions controls display of the class="instructions" - used wherever there is instruction text
+			.moderation controls display of the class="moderation" - used for the moderation instructions (wrapped in instructions class) ate foot of the page - requires the moderatorComments comments field and  the modCommsDisplay field (both immediately following this section.
+			#addSpecies in the field instr_add_species controls display of the add species intructions id="addSpecies" used when Not Listed is selected
+			
+			attribute 417 is the species to be added field and its label - they are assigned to a field when it is created in the form buoild: RH mouse click in browser to see & adjust your code appropriately. the for= is the label attribute, the other the field itself.
+				$('label[for="attribute_417"]').parents('tr').hide(); using this instead hides the enter row and deals with the Read case where the prposed name is in an unnamed span.
+			in Production it is attribute 372	
+				
+			attribute 422 is the moderation comments field and its label - in UAT
+			in Production it is 365
+			
+			
+
+--------------COPY CODE START --------------
+<!-- PAGEMODE PARSE URL & SET CSS -->
+<script type="text/javascript">		
+jQuery(function () {
+	/* start by hiding instructins, moderation fields, add species help, add species field and moderators comments field */
+	$('.instructions').hide();
+	$('.moderation').hide();
+	$('.new').hide();
+	$('#addSpecies').hide();
+	$('label[for="attribute_372"]').parents('tr').hide();
+	$('[for=attribute_365]').hide();
+	$('#attribute_365').hide();
+	
+	/* check on Species ID - if Not Listed (read and edit tests below) then show the Species to be Added label & field*/
+	var id =  $('.commonName').text();
+	var id2 = $('[name=survey_species_search]').val();
+	if (id == 'Not Listed' || id2 == 'Not Listed' || id == 'Unidentified' || id2 == 'Unidentified' || id == 'Uncertain' || id2 == 'Uncertain'){
+		$('[for=attribute_372]').css("display","");
+		$('label[for="attribute_372"]').parents('tr').show();
+		$('#attribute_372').css("display","");
+	}
+
+	/* parse the survey URL to get set the page mode & then display appropriate content */
+	function getURLVar(variable) {      		
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");      			
+			for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");        				
+					if (pair[0] == variable) {          					
+						return pair[1];  
+					}     			
+			}   			
+	}; 		 	
+	/* perform the URL variable tests once - there is a better way to do this (check once, compare) but I hav run out of time */	
+	var pageMode = ""; 	
+	var preview = getURLVar("preview");
+	var surveyId = getURLVar("surveyId"); 
+	var recordId = getURLVar("recordId");
+	var editForm = getURLVar("editForm");
+	var modText =  $('#attribute_365').val();
+	
+	if( preview == "preview") { 
+			pageMode = "new preview" ; 
+				$('.instructions').css("display","block");
+				$('.new').css("display","block");
+	} else if( surveyId !=="" && !recordId ) { 
+			pageMode = "new" ;
+				$('.instructions').css("display","block");
+				$('.new').css("display","block");
+				$('.moderation').css("display","none");
+	} else if( recordId !=="" && editForm == "true" ) { 
+			pageMode = "edit" ; 
+				$('.instructions').css("display","block");
+				if (bdrs.isAdmin){
+					$('.moderation').css("display","block");
+				}
+				if (!bdrs.isAdmin){
+					$('#attribute_365').css("display","none");
+					$('[for=attribute_365]').css("display","none");
+						if (modText !== '' ){		
+							$('#modcommstext').html(modText);
+						}
+						if (modText !== '' ){		
+							$('#modcommslabel').html('Moderators Comments Label');
+						}
+				} else {
+					$('[for=attribute_365]').show();
+					$('#attribute_365').show();
+				}
+
+	} else {
+			pageMode = "read" ; 
+				$('#addSpecies').css("display","none");									
+				$('#newSpecies').css("display","none");	
+				$('[for=attribute_365]').show();
+				$('#attribute_365').show();
+	};
+
+});
+</script> 
+--------------COPY CODE END --------------
+
+
+***********MODERATION TEXT CODE 2: 
+		Moderation comments field - has attribute 422: 	Description = Moderators Comments; Database Name = moderatorComments; type = Long Text at survey level.
+
+		Displaying the Admin moderation comments & label using divs - CSS is set on load by code above
+		
+		--------------COPY CODE START --------------
+		<!--MOD DISPLAY ONLY-->
+		<div id="modcommslabel" style="color: #808080; text-align: right; font-weight: bold;width: 39%;float:left; "><strong></strong></div>
+		<div id="modcommstext" style="color: #808080; text-align: left; width: 60%;float:right;"></div>
+		</div>	
+		<div style="clear: both;">
+		--------------COPY CODE END --------------		
+			
+		
+
+***********MODERATION CODE 3 - UPDATE TO SPECIES IDENTIFICATION AUTCOMPLETE FIELD: WHEN = "NOT LISTED" ADDS FIELD & INSTRUCTIONS TO FORM FOR USER TO INDETIFY MISSING SPECIES NAME
+			
+			WORKING CODE
+			This code manages display for record where the species field is being EDITED - new & moderated records
+			Instructions
+					- copy the code below and paste into the HTML field you wish to hide
+					- suggest using a field name such as Not_Listed
+					- this code tests the species autocomplete field and, if Uncertain (not used in ALCW) or Not Listed are selected displays the otherwise hidden add_species field and the associated instructions div class="addSpecies"
+					
+					- NOTE in production ALCW the species field is attribute_372 so need to replace on copying over AND find the attribute number/s when using elsewhere )I use firebug with FireFix to inspect the element and get the ID number
+
+
+			--------------COPY CODE START --------------
+		<!--NOT LISTED AUTOCOMPLETE-->
+		<script type="text/javascript">  
+			jQuery('#survey_species_search').focus(function() {    	
+				jQuery('#survey_species_search').autocomplete("option", "select",  function (event, ui) {		
+					var taxon = ui.item.data;		
+					jQuery("[name=species]").val(taxon.id).trigger("blur");		
+					jQuery('#specialCommonName').html(taxon.commonName);		
+					jQuery("[name^=taxonGroupAttr_]").parents("tr").remove();			
+					if(taxon.commonName == 'Uncertain' || taxon.commonName == 'Not Listed') {				
+						$('#attribute_372').css("border","1px solid red");				
+						$('#attribute_372').css("display","");				
+						$('#addSpecies').css("display","");				
+						$('[for=attribute_372]').css("font","red");				
+						$('[for=attribute_372]').css("display","");	
+						$('label[for="attribute_372"]').parents('tr').show();						
+					}	else {				
+						$('label[for="attribute_372"]').parents('tr').hide();
+						$('#addSpecies').css("display","none");				
+						$('[for=attribute_372]').css("font","red");				
+						$('[for=attribute_372]').css("display","none");							
+					}     			
+						var params = {};      			
+						params.surveyId = jQuery("[name=surveyId]").val();     			
+						params.taxonId = taxon.id;      			
+						var recordIdElem = jQuery("[name=recordId]");      			
+							if(recordIdElem.val().length > 0) {				
+								params.recordId = recordIdElem.val();		     			
+							}	    			
+						jQuery.get("/bdrs-core/bdrs/user/ajaxTrackerTaxonAttributeTable.htm", params, function(data) {				
+						jQuery(".form_table").find("tbody").append(data);      			
+					});    	
+				});  
+			});
+		</script>
+			--------------COPY CODE END --------------

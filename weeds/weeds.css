@@ -1,0 +1,38 @@
+body {
+	color: #4a300c;
+	background-image: url(http://weeds.ala.org.au/images/bg.gif);
+	background-color: #aebc82;
+}
+
+font,th,td,p { font-family: Arial, Helvetica, Verdana, sans-serif }
+a:link,a:active { color : #4a300c; }
+a:visited { color : #695535; }
+hr { height: 0px; border: solid #d5d5d5 0px; border-top-width: 1px;}
+
+.pagesub { font-size : 11px; font-family: Arial Black, Arial, Helvetica, Verdana, sans-serif; }
+
+.sitemapmenu { font-size : 12px; font-family: Arial, Helvetica, Verdana, sans-serif; color: #e00000; font-weight: bold; }
+a.sitemapmenu,a.sitemapmenu:active { color: #322108; text-decoration: underline; font-weight: normal; }
+a.sitemapmenu:visited { color: #695535; text-decoration: underline; font-weight: normal; }
+a.sitemapmenu:hover	{ color: #e00000; text-decoration: underline; font-weight: normal }
+
+.alert { font-size : 16px;  color: #de0000; font-family: Arial, Helvetica, Verdana, sans-serif }
+a.alert,a.alert:active { font-size : 14px;  color: #de0000; text-decoration: underline; }
+a.alert:visited { font-size : 14px;  color: #de0000; text-decoration: underline; }
+a.alert:hover	{ font-size : 14px;  color: #ffffff; text-decoration: underline; }
+
+a.announce,a.announce:active { font-size : 18px;  color: #de0000; text-decoration: underline; }
+a.announce:visited { font-size : 18px;  color: #de0000; text-decoration: underline; }
+a.announce:hover	{ font-size : 18px;  color: #ffffff; text-decoration: underline; }
+.WordSection1 div .MsoNormalTable tr td .MsoNormalTable tr td a b table tr h3 {
+	color: #FF0;
+}
+.WordSection1 div .MsoNormalTable tr td .MsoNormalTable tr td a b table tr h3 {
+	color: #FF0;
+}
+.WordSection1 div .MsoNormalTable tr td .MsoNormalTable tr td a b table tr h3 {
+	color: #FF0;
+}
+.WordSection1 div .MsoNormalTable tr td .MsoNormalTable tr td a b table tr h3 {
+	color: #FF0;
+}

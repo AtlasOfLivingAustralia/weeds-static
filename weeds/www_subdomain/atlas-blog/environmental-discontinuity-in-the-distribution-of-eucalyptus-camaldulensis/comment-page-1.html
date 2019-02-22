@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="google-site-verification" content="MdnA79C1YfZ6Yx2qYOXWi_TYFfUvEJOQAmHNaeEWIts"/>
+<meta name="description" content="The Atlas of Living Australia provides tools to enable users of biodiversity information to find, access, combine and visualise data on Australian plants and animals"/>
+<title>Exploring species distribution using environmental scatter plots |  Atlas of Living Australia</title>
+<link rel="stylesheet" href="../../../wp-content/themes/ala/www_subdomain/style.css" type="text/css" media="screen"/>
+<link rel="icon" type="image/x-icon" href="../../../wp-content/themes/ala/images/www_subdomain/favicon.ico"/> 
+	<link rel="shortcut icon" type="image/x-icon" href="../../../wp-content/themes/ala/images/www_subdomain/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/sf.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/highlights.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/search.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../wp-content/themes/ala/css/www_subdomain/jquery.autocomplete.css"/>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/iframe.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="Atlas of Living Australia » Feed" href="http://www.ala.org.au/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Atlas of Living Australia » Comments Feed" href="http://www.ala.org.au/comments/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Atlas of Living Australia » Exploring species distribution using environmental scatter plots Comments Feed" href="http://www.ala.org.au/atlas-blog/environmental-discontinuity-in-the-distribution-of-eucalyptus-camaldulensis/feed/"/>
+<link rel="stylesheet" id="commentvalidation-css" href="../../../wp-content/plugins/comment-validation/www_subdomain/comment-validation.css" type="text/css" media="all"/>
+<link rel="stylesheet" id="contact-form-7-css" href="../../../wp-content/plugins/contact-form-7/www_subdomain/styles.css" type="text/css" media="all"/>
+<link rel="stylesheet" id="jquery.lightbox.min.css-css" href="../../../wp-content/plugins/wp-jquery-lightbox/www_subdomain/lightbox.min.css" type="text/css" media="all"/>
+<script type="text/javascript" src="../../../wp-includes/js/www_subdomain/l10n.js"></script>
+<script type="text/javascript" src="../../../ajax/libs/jquery/1-4-2/jquery.min.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/comment-validation/www_subdomain/jquery.validate.pack.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/comment-validation/www_subdomain/comment-validation.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/menubar-templates/Superfish/www_subdomain/superfish.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ala.org.au/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ala.org.au/wp-includes/wlwmanifest.xml"/> 
+<link rel="index" title="Atlas of Living Australia" href="http://www.ala.org.au/"/>
+<link rel="start" title="User needs analysis" href="http://www.ala.org.au/news/user-needs-analysis/"/>
+<meta name="generator" content="WordPress 3.1"/>
+<link rel="canonical" href="http://www.ala.org.au/atlas-blog/environmental-discontinuity-in-the-distribution-of-eucalyptus-camaldulensis/"/>
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+<!-- WP Menubar 4.8: start CSS -->
+<!-- WP Menubar 4.8: end CSS -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/hoverintent-min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/superfish/www_subdomain/superfish.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/jquery.autocomplete.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../../wp-content/themes/ala/scripts/www_subdomain/uservoice.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../wp-content/themes/ala/scripts/fancybox/www_subdomain/jquery.fancybox-1.3.1.css" media="screen"/>
+	<script type="text/javascript" src="../../../wp-content/themes/ala/scripts/fancybox/www_subdomain/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript">
+		// initialise plugins
+		jQuery(function(){
+			jQuery('ul.sf').superfish( {
+				delay:500,
+				autoArrows:false,
+				dropShadows:false
+			});
+            jQuery("form#search-form input#search").autocomplete('../../../search/bie_subdomain/auto.js', {
+                extraParams: {limit: 100},
+                dataType: 'jsonp',
+                parse: function(data) {
+                    var rows = new Array();
+                    data = data.autoCompleteList;
+                    for(var i=0; i<data.length; i++){
+                        rows[i] = { 
+                            data:data[i],
+                            value: data[i].matchedNames[0],
+                            result: data[i].matchedNames[0]
+                        };
+                    }
+                    return rows;
+                },
+                matchSubset: false,
+                formatItem: function(row, i, n) {
+                    return row.matchedNames[0];
+                },
+                cacheLength: 10,
+                minChars: 3,
+                scroll: false,
+                max: 10,
+                selectFirst: false
+            });
+		});
+	</script>
+<body id="page-2" class="single single-alablog postid-17729 single-format-standard three-column">
+<div id="wrapper">
+	<div id="banner">
+		<div id="logo">
+			<a href="http://www.ala.org.au/" title="Atlas of Living Australia home"><img src="../../../wp-content/themes/ala/images/www_subdomain/ala_logo.png" width="215" height="80" alt="Atlas of Living Australia logo"/></a>
+		</div><!--close logo-->
+		<div id="nav">
+		<!-- WP Menubar 4.8: start menu nav-site-loggedout, template Superfish, CSS  -->
+<ul class="sf"><li class="nav-home"><a href="http://www.ala.org.au/"><span>Home</span></a></li><li class="nav-explore"><a href="http://www.ala.org.au/explore/"><span>Explore</span></a><ul><li><a href="http://biocache.ala.org.au/explore/your-area"><span>Your Area</span></a></li><li><a href="http://bie.ala.org.au/regions/"><span>Regions</span></a></li><li><a href="http://www.ala.org.au/explore/species-maps/"><span>Species Maps</span></a></li><li><a href="http://collections.ala.org.au/public/map"><span>Natural History Collections</span></a></li><li><a href="http://www.ala.org.au/explore/themes/"><span>Themes & Case Studies</span></a></li></ul></li><li class="nav-tools"><a href="http://www.ala.org.au/tools-services/"><span>Tools</span></a><ul><li><a href="http://www.ala.org.au/tools-services/citizen-science/"><span>Citizen Science</span></a></li><li><a href="http://www.ala.org.au/tools-services/imaging/"><span>Imaging</span></a></li><li><a href="http://www.ala.org.au/tools-services/identification-tools/"><span>Identification Tools</span></a></li><li><a href="http://www.ala.org.au/tools-services/sds/"><span>Sensitive Data Service</span></a></li><li><a href="http://www.ala.org.au/tools-services/spatial-analysis/"><span>Spatial Analysis</span></a></li><li><a href="http://www.ala.org.au/tools-services/species-name-services/"><span>Taxon Web Services</span></a></li><li><a href="http://www.ala.org.au/tools-services/onlinedesktop-tools-review/"><span>Online & Desktop Tools Review </span></a></li></ul></li><li class="nav-share"><a href="http://www.ala.org.au/share/" title="Share - links, images, images, literature, your time"><span>Share</span></a><ul><li><a href="http://www.ala.org.au/share/share-links/"><span>Share links, ideas, information</span></a></li><li><a href="http://www.ala.org.au/share/share-data/"><span>Share Datasets</span></a></li><li><a href="http://www.ala.org.au/share/about-sharing/"><span>About Sharing</span></a></li></ul></li><li class="nav-support"><a href="http://www.ala.org.au/support/"><span>Support</span></a><ul><li><a href="http://www.ala.org.au/support/contact-us/"><span>Contact Us</span></a></li><li><a href="http://www.ala.org.au/support/get-started/"><span>Get Started</span></a></li><li><a href="http://www.ala.org.au/support/user-feedback/"><span>User Feedback</span></a></li><li><a href="http://www.ala.org.au/support/faq/"><span>Frequently Asked Questions</span></a></li></ul></li><li class="nav-contact"><a href="http://www.ala.org.au/support/contact-us/"><span>Contact Us</span></a></li><li class="nav-about"><a href="http://www.ala.org.au/about/"><span>About the Atlas</span></a><ul><li><a href="http://www.ala.org.au/about/progress/"><span>A Work In Progress</span></a></li><li><a href="http://www.ala.org.au/about/people/"><span>Working Together</span></a></li><li><a href="http://www.ala.org.au/about/contributors/"><span>Atlas Contributors</span></a></li><li><a href="http://www.ala.org.au/about/project-time-line/"><span>Project Time Line</span></a></li><li><a href="http://www.ala.org.au/about/program-of-projects/"><span>Atlas Projects</span></a></li><li><a href="http://www.ala.org.au/about/international-collaborations/"><span>Associated Projects</span></a></li><li><a href="http://www.ala.org.au/about/communications-centre/"><span>Communications Centre</span></a></li><li><a href="http://www.ala.org.au/about/governance/"><span>Atlas Governance</span></a></li><li><a href="http://www.ala.org.au/about/terms-of-use/"><span>Terms of Use</span></a></li></ul></li><li class="nav-myprofile nav-right"><a href="https://auth.ala.org.au/cas/login?service=http://www.ala.org.au/wp-login.php?redirect_to=http://www.ala.org.au/my-profile/"><span>My Profile</span></a></li><li class="nav-login nav-right"><a href="https://auth.ala.org.au/cas/login?service=http://www.ala.org.au/wp-login.php?redirect_to=http://www.ala.org.au/"><span>Log in</span></a></li></ul>
+<!-- WP Menubar 4.8: end menu nav-site-loggedout, template Superfish, CSS  -->
+		</div><!--close nav-->
+		<div id="wrapper_search">
+			<form id="search-form" action="http://bie.ala.org.au/search" method="get" name="search-form">
+			<label for="search">Search</label>
+			<input type="text" class="filled" id="search" name="q" title="Search the Atlas" placeholder="Search the Atlas"/>
+			<span class="search-button-wrapper"><input type="submit" class="search-button" id="search-button" alt="Search" value="Search"/></span>
+			</form>
+		</div><!--close wrapper_search-->
+	</div><!--close banner-->
+	<div id="loginId" class="hide"></div>
+	<div style="display:none; text-align: left;">
+					<div id="search_record" style="text-align: left;">
+						<h3>Enter the species' scientific or common name</h3>
+						<div id="inpage_search">
+							<form id="search-inpage" action="http://bie.ala.org.au/search" method="get" name="search-form">
+							<label for="search">Search</label>
+							<input type="text" class="filled" id="search" name="q" placeholder="e.g. Ornithorhynchus anatinus"/>
+							<span class="search-button-wrapper"><input type="submit" class="search-button" alt="Search" value="Search"/></span>
+							</form>
+						</div><!--close wrapper_search-->
+					</div>
+				</div><!--close lightbox-->
+	<div id="content">
+<div id="header">
+		<div id="breadcrumb"><a href="http://www.ala.org.au/">Home</a> <a href="http://www.ala.org.au/about/">About the Atlas</a> <a href="http://www.ala.org.au/about/communications-centre/">Communications Centre</a> <a href="http://www.ala.org.au/about/communications-centre/atlas-blog/">Atlas Blog</a> Exploring species distribution using environmental scatter plots</div>		<h1>Exploring species distribution using environmental scatter plots</h1>
+	</div><!--close header-->
+		<div id="column-one">
+						<ul class="nav-vertical">
+				<li><a href="http://www.ala.org.au/about/">About the Atlas</a>
+				<ul>
+								<li class="page_item page-item-11571"><a href="http://www.ala.org.au/about/progress/" title="A Work In Progress">A Work In Progress</a>
+<ul class="children">
+	<li class="page_item page-item-13930"><a href="http://www.ala.org.au/about/progress/cant-find-species/" title="Species Not Found?">Species Not Found&#63;</a></li>
+	<li class="page_item page-item-13946"><a href="http://www.ala.org.au/about/progress/no-species-information/" title="No Species Information?">No Species Information&#63;</a></li>
+	<li class="page_item page-item-13949"><a href="http://www.ala.org.au/about/progress/same-species-different-names/" title="Duplicate Species?">Duplicate Species&#63;</a></li>
+	<li class="page_item page-item-13974"><a href="http://www.ala.org.au/about/progress/wrong-classification/" title="Wrong Classification?">Wrong Classification&#63;</a></li>
+	<li class="page_item page-item-13980"><a href="http://www.ala.org.au/about/progress/map-ranges/" title="Errors In Maps?">Errors In Maps&#63;</a></li>
+	<li class="page_item page-item-16019"><a href="http://www.ala.org.au/about/progress/issueslog/" title="Known Issues">Known Issues</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3478"><a href="http://www.ala.org.au/about/atlas-partners/" title="Atlas Partners">Atlas Partners</a>
+<ul class="children">
+	<li class="page_item page-item-3582"><a href="http://www.ala.org.au/about/atlas-partners/csiro/" title="CSIRO">CSIRO</a></li>
+	<li class="page_item page-item-3603"><a href="http://www.ala.org.au/about/atlas-partners/australian-museum/" title="Australian Museum">Australian Museum</a></li>
+	<li class="page_item page-item-3605"><a href="http://www.ala.org.au/about/atlas-partners/museum-and-art-gallery-of-northern-territory/" title="Museum and Art Gallery of the Northern Territory">Museum and Art Gallery of the Northern Territory</a></li>
+	<li class="page_item page-item-3609"><a href="http://www.ala.org.au/about/atlas-partners/museum-victoria/" title="Museum Victoria">Museum Victoria</a></li>
+	<li class="page_item page-item-3612"><a href="http://www.ala.org.au/about/atlas-partners/queensland-museum/" title="Queensland Museum">Queensland Museum</a></li>
+	<li class="page_item page-item-3615"><a href="http://www.ala.org.au/about/atlas-partners/south-australian-museum/" title="South Australian Museum">South Australian Museum</a></li>
+	<li class="page_item page-item-3618"><a href="http://www.ala.org.au/about/atlas-partners/tasmanian-museum-and-art-gallery/" title="Tasmanian Museum and Art Gallery">Tasmanian Museum and Art Gallery</a></li>
+	<li class="page_item page-item-3620"><a href="http://www.ala.org.au/about/atlas-partners/western-australian-museum/" title="Western Australian Museum">Western Australian Museum</a></li>
+	<li class="page_item page-item-3640"><a href="http://www.ala.org.au/about/atlas-partners/council-of-australasian-museum-directors/" title="Council of Australasian Museum Directors">Council of Australasian Museum Directors</a></li>
+	<li class="page_item page-item-3645"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australasian-herbaria/" title="Council of Heads of Australasian Herbaria">Council of Heads of Australasian Herbaria</a></li>
+	<li class="page_item page-item-3656"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australian-collections-of-microorganisms/" title="Council of Heads of Australian Collections of Microorganisms">Council of Heads of Australian Collections of Microorganisms</a></li>
+	<li class="page_item page-item-3659"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australian-entomological-collections/" title="Council of Heads of Australian Entomological Collections">Council of Heads of Australian Entomological Collections</a></li>
+	<li class="page_item page-item-3664"><a href="http://www.ala.org.au/about/atlas-partners/council-of-heads-of-australian-faunal-collections/" title="Council of Heads of Australian Faunal Collections">Council of Heads of Australian Faunal Collections</a></li>
+	<li class="page_item page-item-3666"><a href="http://www.ala.org.au/about/atlas-partners/southern-cross-university/" title="Southern Cross University">Southern Cross University</a></li>
+	<li class="page_item page-item-3669"><a href="http://www.ala.org.au/about/atlas-partners/the-university-of-adelaide/" title="The University of Adelaide">The University of Adelaide</a></li>
+	<li class="page_item page-item-3671"><a href="http://www.ala.org.au/about/atlas-partners/department-of-agriculture-fisheries-and-forestry/" title="Department of Agriculture, Fisheries and Forestry">Department of Agriculture, Fisheries and Forestry</a></li>
+	<li class="page_item page-item-3675"><a href="http://www.ala.org.au/about/atlas-partners/dsewpac/" title="Department of Sustainability, Environment, Water, Population and Communities">Department of Sustainability, Environment, Water, Population and Communities</a></li>
+	<li class="page_item page-item-3702"><a href="http://www.ala.org.au/about/atlas-partners/national-collaborative-research-infrastructure-strategy/" title="National Collaborative Research Infrastructure Strategy">National Collaborative Research Infrastructure Strategy</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3396"><a href="http://www.ala.org.au/about/people/" title="Working Together">Working Together</a></li>
+<li class="page_item page-item-3914"><a href="http://www.ala.org.au/about/contributors/" title="Atlas Contributors">Atlas Contributors</a></li>
+<li class="page_item page-item-12"><a href="http://www.ala.org.au/about/project-time-line/" title="Project Time Line">Project Time Line</a></li>
+<li class="page_item page-item-3270"><a href="http://www.ala.org.au/about/program-of-projects/" title="Atlas Projects">Atlas Projects</a>
+<ul class="children">
+	<li class="page_item page-item-4323"><a href="http://www.ala.org.au/about/program-of-projects/annotations/" title="Annotations">Annotations</a>
+	<ul class="children">
+		<li class="page_item page-item-4470"><a href="http://www.ala.org.au/about/program-of-projects/annotations/preview-danno-dannotate/" title="Annotations Preview">Annotations Preview</a></li>
+		<li class="page_item page-item-15809"><a href="http://www.ala.org.au/about/program-of-projects/annotations/collaborative-annotations/" title="Collaborative Annotations">Collaborative Annotations</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3272"><a href="http://www.ala.org.au/about/program-of-projects/bhl/" title="BHL / Digital Literature">BHL / Digital Literature</a></li>
+	<li class="page_item page-item-12246"><a href="http://www.ala.org.au/about/program-of-projects/biolomics/" title="BioloMICS">BioloMICS</a></li>
+	<li class="page_item page-item-3279"><a href="http://www.ala.org.au/about/program-of-projects/bold/" title="BOLD / Molecular Data">BOLD / Molecular Data</a></li>
+	<li class="page_item page-item-3290"><a href="http://www.ala.org.au/about/program-of-projects/citizen-science/" title="Citizen Science">Citizen Science</a>
+	<ul class="children">
+		<li class="page_item page-item-10765"><a href="http://www.ala.org.au/about/program-of-projects/citizen-science/currently-working-on/" title="Currently Working On">Currently Working On</a></li>
+		<li class="page_item page-item-10763"><a href="http://www.ala.org.au/about/program-of-projects/citizen-science/work-to-date/" title="Work to Date">Work to Date</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3307"><a href="http://www.ala.org.au/about/program-of-projects/collections-data-management/" title="Collection Data Management">Collection Data Management</a></li>
+	<li class="page_item page-item-3260"><a href="http://www.ala.org.au/about/program-of-projects/data-management/" title="Data Management">Data Management</a></li>
+	<li class="page_item page-item-3324"><a href="http://www.ala.org.au/about/program-of-projects/spatial-mapping/" title="Mapping: the Spatial Portal">Mapping: the Spatial Portal</a>
+	<ul class="children">
+		<li class="page_item page-item-4571"><a href="http://www.ala.org.au/about/program-of-projects/spatial-mapping/geospatial-data-harvesting/" title="Geospatial Data Harvesting">Geospatial Data Harvesting</a></li>
+		<li class="page_item page-item-4628"><a href="http://www.ala.org.au/about/program-of-projects/spatial-mapping/gis-services/" title="GIS Services">GIS Services</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3277"><a href="http://www.ala.org.au/about/program-of-projects/morphbank/" title="Morphbank / Imaging">Morphbank / Imaging</a></li>
+	<li class="page_item page-item-3281"><a href="http://www.ala.org.au/about/program-of-projects/names-services/" title="National Species Lists">National Species Lists</a>
+	<ul class="children">
+		<li class="page_item page-item-8875"><a href="http://www.ala.org.au/about/program-of-projects/names-services/aboutportfolio-of-projectsnames-servicesspecies-names/" title="Species Names">Species Names</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3298"><a href="http://www.ala.org.au/about/program-of-projects/sds/" title="Sensitive Data Service">Sensitive Data Service</a>
+	<ul class="children">
+		<li class="page_item page-item-12380"><a href="http://www.ala.org.au/about/program-of-projects/sds/threatened-species-codes/" title="Threatened Species Codes">Threatened Species Codes</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3302"><a href="http://www.ala.org.au/about/program-of-projects/species-identification/" title="Species Identification">Species Identification</a>
+	<ul class="children">
+		<li class="page_item page-item-6415"><a href="http://www.ala.org.au/about/program-of-projects/species-identification/supporting-delta-users/" title="Supporting DELTA users">Supporting DELTA users</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-11976"><a href="http://www.ala.org.au/about/program-of-projects/specify/" title="Specify 6">Specify 6</a></li>
+	<li class="page_item page-item-3300"><a href="http://www.ala.org.au/about/program-of-projects/trin-wiki/" title="TRIN Tools for Collaboration">TRIN Tools for Collaboration</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3506"><a href="http://www.ala.org.au/about/international-collaborations/" title="Associated Projects">Associated Projects</a>
+<ul class="children">
+	<li class="page_item page-item-16147"><a href="http://www.ala.org.au/about/international-collaborations/gbif/" title="GBIF">GBIF</a></li>
+</ul>
+</li>
+<li class="page_item page-item-24"><a href="http://www.ala.org.au/about/communications-centre/" title="Communications Centre">Communications Centre</a>
+<ul class="children">
+	<li class="page_item page-item-17727"><a href="http://www.ala.org.au/about/communications-centre/atlas-blog/" title="Atlas Blog">Atlas Blog</a></li>
+	<li class="page_item page-item-11877"><a href="http://www.ala.org.au/about/communications-centre/publications/" title="Publications">Publications</a></li>
+	<li class="page_item page-item-11880"><a href="http://www.ala.org.au/about/communications-centre/presentations/" title="Presentations">Presentations</a>
+	<ul class="children">
+		<li class="page_item page-item-6982"><a href="http://www.ala.org.au/about/communications-centre/presentations/tdwg-2008-presentations/" title="TDWG 2008 Presentations">TDWG 2008 Presentations</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1719"><a href="http://www.ala.org.au/about/communications-centre/newsevents/" title="News &amp; Events">News &#038; Events</a></li>
+	<li class="page_item page-item-5652"><a href="http://www.ala.org.au/about/communications-centre/donald-hobern/" title="Atlas Director Donald Hobern">Atlas Director Donald Hobern</a></li>
+	<li class="page_item page-item-5623"><a href="http://www.ala.org.au/about/communications-centre/atlas-group-photo-november-2009/" title="Atlas Group Photo November 2009">Atlas Group Photo November 2009</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3468"><a href="http://www.ala.org.au/about/governance/" title="Atlas Governance">Atlas Governance</a>
+<ul class="children">
+	<li class="page_item page-item-4947"><a href="http://www.ala.org.au/about/governance/governance-documents/" title="Governance Documents">Governance Documents</a></li>
+</ul>
+</li>
+<li class="page_item page-item-92"><a href="http://www.ala.org.au/about/terms-of-use/" title="Terms of Use">Terms of Use</a>
+<ul class="children">
+	<li class="page_item page-item-93"><a href="http://www.ala.org.au/about/terms-of-use/citing-the-atlas/" title="Citing the Atlas">Citing the Atlas</a></li>
+	<li class="page_item page-item-1858"><a href="http://www.ala.org.au/about/terms-of-use/photo-credits/" title="Photo Credits">Photo Credits</a></li>
+	<li class="page_item page-item-1874"><a href="http://www.ala.org.au/about/terms-of-use/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li>
+</ul>
+</li>
+				</ul>
+				</li>
+						</ul>
+				</li>
+			</ul>
+				</div><!--close column-one-->
+					<div id="column-two">
+			<div class="section">
+				<div id="post-17729" class="post-17729 ala_blog type-ala_blog status-publish hentry">
+					<p><span class="date">15 March, 2011</span>
+					<span class="byline">By Donald Hobern</span></p>
+					<div class="entry-content">
+<!-- wp-jquery-lightbox, a WordPress plugin by ulfben --> 
+<p>The Atlas of Living Australia <a href="http://www.ala.org.au/explore/species-maps/">spatial portal</a> now includes additional tools for exploring the environmental parameters which influence the distribution of each species. These tools often suggest interesting questions about the biology of the species. This post is to show the use of these tools, illustrated with the example of <em><a href="http://bie.ala.org.au/species/urn:lsid:biodiversity.org.au:apni.taxon:425841">Eucalyptus camaldulensis</a></em> Dehnh. (River Red Gum).</p>
+<p>Here is the spatial portal <a href="http://www.ala.org.au/explore/species-maps/?species_lsid=urn:lsid:biodiversity.org.au:apni.taxon:425841">map for all records of </a><em><a href="http://www.ala.org.au/explore/species-maps/?species_lsid=urn:lsid:biodiversity.org.au:apni.taxon:425841">Eucalyptus camaldulensis</a>:</em></p>
+<div id="attachment_17735" class="wp-caption aligncenter" style="width: 460px"><img class="size-large wp-image-17735" src="../../../wp-content/uploads/2011/03/www_subdomain/E-camaldulensis-500x454.png" alt="" width="450" height="409"/><p class="wp-caption-text">Distribution for E. camaldulensis</p></div>
+<p>Each dot on this map represents a location where a specimen or observation has been identified as belonging to this species. Clearly this is not a full view of the range of the species in Australia, and doubtless there are some records here which may have been misidentified.  Nevertheless this is a rich sample of the locations where the species occurs - and the environment at each of these locations is a sample of the environments which can support this species. The ALA spatial portal includes over 300 different geospatial layers for use in modelling and analysis. We can sample these layers to get values for annual mean temperature, annual rainfall and many other factors at each of the locations where <em>Eucalyptus camaldulensis</em> has been recorded.</p>
+<p>The download tools included within the spatial portal make it easy to get a spreadsheet of records for any species with every record annotated with these environmental parameters. A new scatter plot tool makes it possible to visualise and explore this information in new ways. Right now this tool can be found under the Analysis tab and the Scatter plot sub-tab, although this is likely to change as the portal develops.</p>
+<p>The scatter plot tool requires three choices to be made - the species to be analysed and a selection of two environmental layers to provide values for the scatterplot. Here is the scatter plot for <em>Eucalyptus camaldulensis</em> localities based on “Precipitation—annual seasonality” and “Temperature—annual mean (Bio01)”:</p>
+<div id="attachment_17738" class="wp-caption aligncenter" style="width: 376px"><img class="size-full wp-image-17738" src="../../../wp-content/uploads/2011/03/www_subdomain/Scatter-E-camaldulensis.gif" alt="" width="366" height="384"/><p class="wp-caption-text">“Precipitation - annual seasonality” against “Temperature - annual mean (Bio01)”</p></div>
+<p>The graph shows how the recorded locations for this species are distributed through an abstract plane defined by rainfall seasonality and mean temperature.  The records at (0, 0.0) are from locations which fall outside the area covered by the environmental layers - the supplied coordinates for these localities fall offshore (incorrect or imprecise coordinated).</p>
+<p>Clearly there is a significant disjunct cluster at the bottom of the scatter plot.  This gap around this cluster represents a set of environments (defined simply by the selected properties) for which we have no records of <em>Eucalyptus camaldulensis</em> - even though we have records of the species occupying environments on either side of this set of environments. (Another way to consider this would be to focus on locations with the same value for annual mean temperature, for example 20C, and consider the spread of values for rainfall seasonality at these locations - the distribution would be bimodal, with complete separation between two clusters.) This immediately poses the question of why the species is not found at locations with intermediate environments.</p>
+<p>One possible answer would be that our sample of locations for the species is too incomplete to be fully representative. Given the number of records for this species from right across Australia, this is possible but seems unlikely.</p>
+<p>Another possible answer could be that what we are seeing is simply a result of Australian geography. It could be that the Australian landmass does not include any areas with intermediate environments of this kind. This can quickly be disproven. Here is the occurrence map for all species of parrot (<a href="http://bie.ala.org.au/species/urn:lsid:biodiversity.org.au:afd.taxon:afe120ec-5e06-4c02-909e-9687441e96bb">Psittacidae</a>) in Australia, along with the equivalent scatter plot:</p>
+<div id="attachment_17737" class="wp-caption aligncenter" style="width: 460px"><img class="size-large wp-image-17737" src="../../../wp-content/uploads/2011/03/www_subdomain/psittacidae-500x454.png" alt="" width="450" height="409"/><p class="wp-caption-text">Distribution for Psittacidae</p></div>
+<div id="attachment_17734" class="wp-caption aligncenter" style="width: 367px"><img class="size-full wp-image-17734" src="../../../wp-content/uploads/2011/03/www_subdomain/Scatter-Psittacidae.gif" alt="" width="357" height="370"/><p class="wp-caption-text">“Precipitation – annual seasonality” against “Temperature – annual mean (Bio01)”  for Psittacidae</p></div>
+<p>Some species of parrot can be found just about everywhere in Australia and the scatter plot therefore shows us the whole spread of environments which can be found in Australia. There is no discontinuity in this scatter plot, which suggests that there is indeed something significant about the discontinuity in <em>Eucalyptus camaldulensis</em> distribution. A possible enhancement to the scatter plots would be to colour the background to indicate which environmental combinations are possible within Australia.</p>
+<p>It is possible to use the scatter plot tool to select records matching a portion of the environment. Simply left-click on a position in the graph and drag a rectangle around the section of interest. This will cause the corresponding locations on the map to be highlighted in red.  Doing this for the cluster at the bottom of the E. camaldulensis scatter plot highlights a number of locations in the south-west of Western Australia:</p>
+<div id="attachment_17736" class="wp-caption aligncenter" style="width: 460px"><img class="size-large wp-image-17736" src="../../../wp-content/uploads/2011/03/www_subdomain/E-camaldulensis-rubberband-500x454.png" alt="" width="450" height="409"/><p class="wp-caption-text">E. camaldulensis distribution as an environmental discontinuity</p></div>
+<p>This tool cannot take us much further, but it is possible to hypothesise what is happening. The locations indicated here fall within the hybridisation zone between <em>Eucalyptus camaldulensis</em> and its close relative <em><a href="http://bie.ala.org.au/species/urn:lsid:biodiversity.org.au:apni.taxon:518">Eucalyptus rudis</a></em> Endl. (Flooded Gum). The underlying records come from specimens in <a href="http://collections.ala.org.au/public/show/dp36">Australia’s Virtual Herbarium</a> and have been formally identified as <em>Eucalyptus camaldulensis</em>, so the issue is not that the plants have been misidentified.  Perhaps hybridisation has introduced genes into the population which support growth in environments to which <em>Eucalyptus camaldulensis </em>is in general unsuited. Another alternative might simply be that <em>Eucalyptus camaldulensis </em>is elsewhere excluded from this kind of environment because of interspecific competition or some other factors not identified here. In any case, simple exploration of species occurrence data in multiple dimensions can lead us to ask new and interesting questions.</p>
+<p>Tools like this have many possible uses:</p>
+<ul>
+<li>It becomes possible to make quick visual comparisons between the environmental niches for different species - we are exploring the possibility of adding a &#8220;dashboard&#8221; of several standardised environmental scatter plots (e.g. rainfall vs. temperature, solar radiation vs. rainfall, solar radiation vs. temperature) to each species overview.</li>
+<li>Understanding the environmental &#8220;niche&#8221; for any species allows us to identify areas where the species might successfully survive. This has application in conservation (understanding where it may be possible to maintain safe populations of threatened species), in biosecurity (understanding where invasive species may be able to survive) and in agriculture (understanding where varieties of crop plants may grow successfully).</li>
+<li>Where a species tolerates a wide range of environments, there is likely to be underlying genetic variation which supports this tolerance. As species become pressured under climate change, these tools would allow researchers to identify populations within a species which might be best adapted to survive in future environments.</li>
+</ul>
+					</div><!-- .entry-content -->
+				</div><!-- #post-## -->
+<!-- You can start editing here. -->
+	<div class="hr">&nbsp;</div>
+	<h3 id="comments">2 Responses</h3>
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+	<ol class="commentlist">
+	   <li class="comment even thread-even depth-1" id="li-comment-6">
+     <div id="comment-6">
+      <div class="comment-author vcard">
+         		<div class="comment-meta commentmetadata"><a href="http://www.ala.org.au/atlas-blog/environmental-discontinuity-in-the-distribution-of-eucalyptus-camaldulensis/comment-page-1/#comment-6">16 Mar 2011 at 6:35 pm</a></div>
+         <cite class="fn"><a href="http://nanhai-tensteps.com/" rel="external nofollow" class="url">花蓮民宿</a></cite>      </div>
+      <p>Very interesting, thank you for sharing!</p>
+      <div class="reply">
+               </div>
+     </div>
+</li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7">
+     <div id="comment-7">
+      <div class="comment-author vcard">
+         		<div class="comment-meta commentmetadata"><a href="http://www.ala.org.au/atlas-blog/environmental-discontinuity-in-the-distribution-of-eucalyptus-camaldulensis/comment-page-1/#comment-7">17 Mar 2011 at 11:56 am</a></div>
+         <cite class="fn"><a href="http://www.instantscreendoor.org/" rel="external nofollow" class="url">Instant Screen Door</a></cite>      </div>
+      <p>Appreciating the dedication you put into your website and detailed information you provide. It’s good to come across a blog every once in a while that isn’t the same unwanted rehashed material. Fantastic read! I’ve bookmarked your site and I’m adding your RSS feeds to my Google account.</p>
+      <div class="reply">
+               </div>
+     </div>
+</li>
+	</ol>
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+<div class="hr-1">&nbsp;</div>
+<div id="respond">
+<h3>Leave a Reply</h3>
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.ala.org.au/atlas-blog/environmental-discontinuity-in-the-distribution-of-eucalyptus-camaldulensis/comment-page-1/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+<form action="http://www.ala.org.au/wp-comments-post.php" method="post" id="commentform">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required="true"/>
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required="true"/>
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3"/>
+<label for="url"><small>Website</small></label></p>
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment"/>
+<input type="hidden" name="comment_post_ID" value="17729" id="comment_post_ID"/>
+<input type="hidden" name="comment_parent" id="comment_parent" value="0"/>
+</p>
+</form>
+</div>
+			</div><!--close section-->
+		</div><!--close column-two-->
+		<div id="column-three">
+			<div class="section">
+					<!--the whole darn thing -->
+			 </div>
+		</div><!--column-three-->
+	</div><!--close content-->
+	<div id="footer">
+				<div id="footer-nav">
+		<ul id="menu-footer-site" class=""><li id="menu-item-1046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1046"><a href="http://www.ala.org.au/">Home</a></li>
+<li id="menu-item-8090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8090"><a href="http://www.ala.org.au/explore/">Explore</a></li>
+<li id="menu-item-1051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1051"><a href="http://www.ala.org.au/tools-services/">Tools</a></li>
+<li id="menu-item-8091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8091"><a href="http://www.ala.org.au/share/">Share</a></li>
+<li id="menu-item-1050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1050"><a href="http://www.ala.org.au/support/">Support</a></li>
+<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a href="http://www.ala.org.au/support/contact-us/">Contact Us</a></li>
+<li id="menu-item-1047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1047"><a href="http://www.ala.org.au/about/">About the Atlas</a></li>
+<li id="menu-item-1052" class="last menu-item menu-item-type-custom menu-item-object-custom menu-item-1052"><a href="http://www.ala.org.au/wp-login.php">Log in</a></li>
+</ul>		<ul id="menu-footer-legal" class=""><li id="menu-item-1045" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1045"><a href="http://www.ala.org.au/about/terms-of-use/">Terms of Use</a></li>
+<li id="menu-item-1042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1042"><a href="http://www.ala.org.au/about/terms-of-use/citing-the-atlas/">Citing the Atlas</a></li>
+<li id="menu-item-12256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12256"><a href="http://www.ala.org.au/about/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-3090" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-3090"><a href="http://www.ala.org.au/site-map/">Site Map</a></li>
+</ul>		</div>
+		<div class="copyright"><p><a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons" class="left no-pipe"><img src="../../../wp-content/themes/ala/images/www_subdomain/creativecommons.png" width="88" height="31" alt=""/></a>This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons">Creative Commons Attribution 3.0 Australia License</a></p><p>Provider content may be covered by other <span class="asterisk-container"><a href="http://www.ala.org.au/about/terms-of-use/" title="Terms of Use">Terms of Use</a>.</span></p></div>
+	</div><!--close footer-->
+	</div><!--close wrapper-->
+<script type="text/javascript" src="../../../wp-includes/js/jquery/www_subdomain/jquery.form.js"></script>
+<script type="text/javascript" src="../../../wp-content/plugins/contact-form-7/www_subdomain/scripts.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JQLBSettings = {
+	fitToScreen: "1",
+	resizeSpeed: "250"
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../../wp-content/plugins/wp-jquery-lightbox/www_subdomain/jquery.lightbox.min.js"></script>
+</body>
+</html>

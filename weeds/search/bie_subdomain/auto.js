@@ -1,0 +1,1 @@
+{"error":"Failed calling web service. class java.io.IOException Server returned HTTP response code: 400 for URL: http://bie.ala.org.au/ws/search/auto.json?null URL= http://bie.ala.org.au/ws/search/auto.json?null."}
